@@ -59,7 +59,7 @@ app.post('/send-otp',async(req,res)=>{
       subject: 'OTP For verification',
       html: `<h1>${otp}</h1>`
     });
-
+    console.log("OTP Sent");
     res.json({
       success: true
     });
